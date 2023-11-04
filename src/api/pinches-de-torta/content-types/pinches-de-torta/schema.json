@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pinches_de_tortas",
+  "info": {
+    "singularName": "pinches-de-torta",
+    "pluralName": "pinches-de-tortas",
+    "displayName": "productos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "decimal"
+    },
+    "categoria": {
+      "type": "enumeration",
+      "enum": [
+        "pinchesDeTorta",
+        "carteles"
+      ]
+    },
+    "fotoproducto": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
